@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MySite — Home</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">MySite</a>
+      <button id="menuToggle" aria-expanded="false" class="menu-btn">☰</button>
+      <nav id="mainNav" class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <h1>Welcome to MySite</h1>
+      <p>This is a small multipage demo showing HTML, CSS & JavaScript working together.</p>
+      <p><a class="btn" href="projects.html">See Projects</a></p>
+    </section>
+
+    <section class="features container">
+      <h2>Features</h2>
+      <ul>
+        <li>Responsive header + mobile menu</li>
+        <li>Dynamic project list (generated with JS)</li>
+        <li>Contact form with validation</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> MySite</p>
+      <p><small>Built with HTML · CSS · JavaScript</small></p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

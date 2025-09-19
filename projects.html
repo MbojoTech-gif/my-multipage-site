@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MySite — Projects</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">MySite</a>
+      <button id="menuToggle" aria-expanded="false" class="menu-btn">☰</button>
+      <nav id="mainNav" class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Projects</h1>
+    <div id="projectsList" class="projects-grid">
+      <!-- JavaScript will render projects here -->
+    </div>
+
+    <section>
+      <h2>Filter projects by max price</h2>
+      <label for="maxPrice">Max price: <span id="priceValue">20</span></label>
+      <input type="range" id="maxPrice" min="0" max="100" value="20">
+      <button id="filterBtn" class="btn">Filter</button>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year-projects"></span> MySite</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MySite — Contact</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">MySite</a>
+      <button id="menuToggle" aria-expanded="false" class="menu-btn">☰</button>
+      <nav id="mainNav" class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Contact</h1>
+
+    <form id="contactForm" class="contact-form" novalidate>
+      <label>
+        Name:
+        <input type="text" name="name" placeholder="Your name" required>
+      </label>
+      <label>
+        Email:
+        <input type="email" name="email" placeholder="you@example.com" required>
+      </label>
+      <label>
+        Message:
+        <textarea name="message" rows="5" placeholder="Write a message" required></textarea>
+      </label>
+      <button type="submit" class="btn">Send</button>
+      <p id="formMessage" role="status"></p>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year-contact"></span> MySite</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

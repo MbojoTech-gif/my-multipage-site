@@ -1,0 +1,57 @@
+:root{
+  --accent:#0b74da;
+  --muted:#666;
+  --max-width:1100px;
+}
+*{box-sizing:border-box}
+body{
+  font-family:Inter, system-ui, Arial, sans-serif;
+  margin:0;
+  line-height:1.5;
+  color:#222;
+  background:#f7f8fb;
+}
+.container{
+  max-width:var(--max-width);
+  margin:0 auto;
+  padding:1rem;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.site-header{
+  background:#fff;
+  border-bottom:1px solid #e6e9ee;
+  position:sticky;
+  top:0;
+  z-index:10;
+}
+.logo{font-weight:700;color:var(--accent);text-decoration:none}
+.nav{display:flex;gap:1rem}
+.nav a{color:#333;text-decoration:none;padding:.5rem .75rem;border-radius:6px}
+.nav a:hover{background:#f0f4fb}
+.menu-btn{display:none;background:none;border:0;font-size:1.25rem;cursor:pointer}
+.hero{padding:3rem 1rem;background:linear-gradient(180deg,#ffffff 0%,#f3f8ff 100%);border-bottom:1px solid #e6e9ee;border-radius:0 0 8px 8px;text-align:center}
+.features{padding:2rem 1rem}
+.site-footer{background:#fff;border-top:1px solid #e6e9ee;padding:.75rem 0;margin-top:2rem;text-align:center}
+
+/* Buttons */
+.btn{display:inline-block;background:var(--accent);color:#fff;padding:.6rem .9rem;border-radius:6px;text-decoration:none;border:0;cursor:pointer}
+.btn:hover{opacity:.95}
+
+/* Projects grid */
+.projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-top:1rem}
+.project-card{background:#fff;border:1px solid #e6e9ee;padding:1rem;border-radius:8px}
+
+/* Forms */
+.contact-form{display:flex;flex-direction:column;gap:.75rem;max-width:640px}
+.contact-form label{display:flex;flex-direction:column;gap:.35rem}
+.contact-form input, .contact-form textarea{padding:.5rem;border:1px solid #dfe6f0;border-radius:6px}
+
+/* Responsive */
+@media(max-width:700px){
+  .nav{display:none;flex-direction:column;gap:.25rem;width:100%;padding:1rem}
+  .menu-btn{display:inline-block}
+  .nav.show{display:flex;background:#fff;border-top:1px solid #e6e9ee}
+  .container{flex-wrap:wrap}
+}
