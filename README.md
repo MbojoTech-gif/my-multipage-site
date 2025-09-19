@@ -29,4 +29,4 @@ Open `index.html` in your browser, or run a simple static server:
 # Python 3
 python -m http.server 8000
 # then open http://localhost:8000
-#live url - 
+#live url - https://my-multipage-site.vercel.app/
